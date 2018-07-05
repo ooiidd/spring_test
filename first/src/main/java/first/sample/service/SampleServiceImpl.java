@@ -22,4 +22,9 @@ public class SampleServiceImpl implements SampleService{
 		return sampleDAO.selectBoardList(map);
 	}
 
+	@Override
+	public List<Map<String, Object>> selectChart(Map<String, Object> map) {
+		return sampleDAO.selectChart(map);
+	}
+
 }

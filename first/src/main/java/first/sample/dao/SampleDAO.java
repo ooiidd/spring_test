@@ -15,4 +15,8 @@ public class SampleDAO extends AbstractDAO{
 		return (List<Map<String, Object>>)selectList("sample.selectBoardList", map);
 	}
 
+	public List<Map<String, Object>> selectChart(Map<String, Object> map) {
+		return (List<Map<String, Object>>)selectList("sample.selectChart", map);
+	}
+
 }

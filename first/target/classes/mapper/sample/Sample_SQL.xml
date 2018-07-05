@@ -16,4 +16,17 @@
 		]]>
 	</select>
 	
+	<select id="selectChart" parameterType="hashmap" resultType="hashmap">
+		<![CDATA[
+			SELECT
+			    run_id,
+			    date,
+			    val
+			FROM
+			    chart
+			WHERE
+				date >= #{startTime} and date <= #{endTime}
+		]]>
+	</select>
+	
 </mapper>
